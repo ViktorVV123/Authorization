@@ -1,12 +1,14 @@
 import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
 import {BackBottom} from '../../Buttom/BackBottom.tsx';
 import {InputComponent} from '../../Input/InputComponent.tsx';
 import {InputPassword} from '../../Input/InputPassword.tsx';
 import {ButtomLogin} from '../../Buttom/ButtomLogin.tsx';
 import {GoogleBtn} from '../../Buttom/GoogleBtn.tsx';
+import {useNavigation} from '@react-navigation/native';
 
 export const RegisterComponent = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <View>
@@ -33,7 +35,9 @@ export const RegisterComponent = () => {
       <View
         style={[styles.containerTextOr, {flexDirection: 'row', marginTop: 50}]}>
         <Text>Already have an account!</Text>
-        <Text style={{fontWeight: '900', marginLeft: 12}}>Login</Text>
+        <TouchableOpacity onPress={() => navigation.navigate('Log')}>
+          <Text style={{fontWeight: '900', marginLeft: 12}}>Login</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );

@@ -1,12 +1,14 @@
 import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
 import {InputComponent} from '../../Input/InputComponent.tsx';
 import {ButtomLogin} from '../../Buttom/ButtomLogin.tsx';
 import {GoogleBtn} from '../../Buttom/GoogleBtn.tsx';
 import {BackBottom} from '../../Buttom/BackBottom.tsx';
-import { InputPassword } from "../../Input/InputPassword.tsx";
+import {InputPassword} from '../../Input/InputPassword.tsx';
+import {useNavigation} from '@react-navigation/native';
 
 export const LoginComponent = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <View>
@@ -33,7 +35,9 @@ export const LoginComponent = () => {
       <View
         style={[styles.containerTextOr, {flexDirection: 'row', marginTop: 40}]}>
         <Text>Don’t have an account?</Text>
-        <Text style={{fontWeight: '900', marginLeft: 12}}>Sign up</Text>
+        <TouchableOpacity onPress={() => navigation.navigate('Reg')}>
+          <Text style={{fontWeight: '900', marginLeft: 12}}>Sign up</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );

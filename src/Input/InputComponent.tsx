@@ -1,15 +1,6 @@
 import React, {useState} from 'react';
-import {
-  StyleSheet,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  TouchableWithoutFeedback,
-  View,
-} from 'react-native';
+import {StyleSheet, TextInput, TouchableOpacity, View} from 'react-native';
 import {EmaiIcon} from '../assets/icons/EmaiIcon.tsx';
-import {PassIcon} from '../assets/icons/PassIcon.tsx';
-import {SeePass} from '../assets/icons/SeePass.tsx';
 import {DeleteText} from '../assets/icons/DeleteText.tsx';
 
 export const InputComponent = () => {

@@ -8,7 +8,7 @@ export const BackBottom = () => {
   return (
     <TouchableOpacity
       style={styles.backBtn}
-      onPress={() => navigation.navigate('Home')}>
+      onPress={() => navigation.goBack()}>
       <View>
         <ArrowBack />
       </View>

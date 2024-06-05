@@ -1,13 +1,10 @@
 import React, {useState} from 'react';
 import {
   StyleSheet,
-  Text,
   TextInput,
-  TouchableOpacity,
   TouchableWithoutFeedback,
   View,
 } from 'react-native';
-import {EmaiIcon} from '../assets/icons/EmaiIcon.tsx';
 import {PassIcon} from '../assets/icons/PassIcon.tsx';
 import {SeePass} from '../assets/icons/SeePass.tsx';
 
