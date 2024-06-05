@@ -1,14 +1,16 @@
 import React from 'react';
 import {Text, View, StyleSheet} from 'react-native';
-import {InputComponent} from './InputComponent.tsx';
-import {ButtonComponent} from './ButtonComponent.tsx';
-import { GoogleBtn } from "./GoogleBtn.tsx";
+import {InputComponent} from '../../Input/InputComponent.tsx';
+import {ButtomLogin} from '../../Buttom/ButtomLogin.tsx';
+import {GoogleBtn} from '../../Buttom/GoogleBtn.tsx';
+import {BackBottom} from '../../Buttom/BackBottom.tsx';
+import { InputPassword } from "../../Input/InputPassword.tsx";
 
 export const LoginComponent = () => {
   return (
     <View style={styles.container}>
       <View>
-        <Text>Back button</Text>
+        <BackBottom />
       </View>
       <View>
         <Text style={styles.textTop}>Hey,</Text>
@@ -17,9 +19,10 @@ export const LoginComponent = () => {
       </View>
       <View style={styles.containerInput}>
         <InputComponent />
+        <InputPassword />
       </View>
       <View style={styles.containerInput}>
-        <ButtonComponent />
+        <ButtomLogin title={'Login'} />
       </View>
       <View style={styles.containerTextOr}>
         <Text style={{fontSize: 16, color: '#aba9a9'}}>or continue with</Text>
@@ -27,10 +30,9 @@ export const LoginComponent = () => {
       <View style={styles.containerTextOr}>
         <GoogleBtn />
       </View>
-      <View style={[styles.containerTextOr, {flexDirection: 'row', marginTop: 40}]}>
-        <Text>
-          Don’t have an account?
-        </Text>
+      <View
+        style={[styles.containerTextOr, {flexDirection: 'row', marginTop: 40}]}>
+        <Text>Don’t have an account?</Text>
         <Text style={{fontWeight: '900', marginLeft: 12}}>Sign up</Text>
       </View>
     </View>
@@ -40,6 +42,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 10,
+    backgroundColor: '#E5EFF8',
   },
   containerInput: {
     justifyContent: 'center',
@@ -47,7 +50,7 @@ const styles = StyleSheet.create({
     marginTop: 80,
   },
   textTop: {
-    fontSize: 50,
+    fontSize: 45,
     color: 'black',
     fontWeight: '700',
   },
@@ -55,5 +58,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 20,
+  },
+  backBtn: {
+    backgroundColor: '#ffffff',
+    borderRadius: 40,
+    width: 40,
+    height: 40,
+    padding: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });

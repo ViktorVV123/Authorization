@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import {GoogleIcon} from '../../assets/icons/GoogleIcon.tsx';
+import {GoogleIcon} from '../assets/icons/GoogleIcon.tsx';
 
 export const GoogleBtn = () => {
   return (

@@ -2,8 +2,10 @@ import React from 'react';
 import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
 import {StartIconMan} from '../../assets/icons/StartIconMan.tsx';
 import {HomeIcon} from '../../assets/icons/HomeIcon.tsx';
+import {useNavigation} from '@react-navigation/native';
 
 export const HomeComponent = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <View style={styles.containerLogo}>
@@ -25,12 +27,14 @@ export const HomeComponent = () => {
         </View>
       </View>
       <View style={styles.btnContainer}>
-        <TouchableOpacity style={styles.btn}>
+        <TouchableOpacity
+          style={styles.btn}
+          onPress={() => navigation.navigate('Log')}>
           <Text style={styles.btnText}>Log</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={[styles.btn, {marginLeft: 30}]}
-          onPress={() => {}}>
+          onPress={() => navigation.navigate('Reg')}>
           <Text style={styles.btnText}>Reg</Text>
         </TouchableOpacity>
       </View>
@@ -42,6 +46,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'space-around',
+    backgroundColor: '#E5EFF8',
   },
   containerLogo: {
     flexDirection: 'row',

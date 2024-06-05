@@ -1,11 +1,11 @@
 import React from 'react';
 import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
 
-export const ButtonComponent = () => {
+export const ButtomLogin = ({title}: {title: any}) => {
   return (
     <View>
       <TouchableOpacity style={styles.containerBtn}>
-        <Text style={styles.textBtn}>Login</Text>
+        <Text style={styles.textBtn}>{title}</Text>
       </TouchableOpacity>
     </View>
   );
