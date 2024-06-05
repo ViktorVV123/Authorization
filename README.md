@@ -69,6 +69,7 @@ You've successfully run and modified your React Native App. :partying_face:
 If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
 
 # Learn More
+![главная](https://github.com/ViktorVV123/Authorization/assets/104371488/fc101769-936e-4bbd-8b8e-6b6c71e0b743)
 
 To learn more about React Native, take a look at the following resources:
 
