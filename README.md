@@ -70,6 +70,10 @@ If you can't get this to work, see the [Troubleshooting](https://reactnative.dev
 
 # Learn More
 ![главная](https://github.com/ViktorVV123/Authorization/assets/104371488/fc101769-936e-4bbd-8b8e-6b6c71e0b743)
+![log](https://github.com/ViktorVV123/Authorization/assets/104371488/d0fd32b2-0c3a-4075-94a1-ce036d25f720)
+![reg](https://github.com/ViktorVV123/Authorization/assets/104371488/d872bdd8-96a8-4621-96d5-d33b599be1cd)
+
+
 
 To learn more about React Native, take a look at the following resources:
 
