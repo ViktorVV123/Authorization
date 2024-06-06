@@ -11,6 +11,7 @@ const Stack = createNativeStackNavigator();
 export type NavigateType = {
   Reg: undefined;
   Log: undefined;
+  Main: undefined;
 };
 function App(): React.JSX.Element {
   return (

@@ -1,5 +1,5 @@
-import React from 'react';
-import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
+import React, {useState} from 'react';
+import { Text, View, StyleSheet, TouchableOpacity, Alert } from "react-native";
 import {InputComponent} from '../../Input/InputComponent.tsx';
 import {ButtomLogin} from '../../Buttom/ButtomLogin.tsx';
 import {GoogleBtn} from '../../Buttom/GoogleBtn.tsx';
@@ -9,9 +9,29 @@ import {useNavigation} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
 import {NavigateType} from '../../../App.tsx';
 
-type NavigationProp = StackNavigationProp<NavigateType, 'Reg'>;
+type NavigationProp = StackNavigationProp<NavigateType, 'Reg', 'Main'>;
+
+const validCredentials = [
+  {username: 'admin', password: 'admin'},
+  {username: 'user', password: 'user'},
+];
 export const LoginComponent = () => {
   const navigation = useNavigation<NavigationProp>();
+  const [pass, setPass] = useState('');
+  const [email, setEmail] = useState('');
+
+  const handleLogin = () => {
+    const isValid = validCredentials.some(
+      cred => cred.username === email && cred.password === pass,
+    );
+    if (isValid) {
+      navigation.navigate('Main');
+    } else {
+      {
+        Alert.alert('Login Failed', 'Invalid username or password');
+      }
+    }
+  };
   return (
     <View style={styles.container}>
       <View>
@@ -23,11 +43,11 @@ export const LoginComponent = () => {
         <Text style={styles.textTop}>Back</Text>
       </View>
       <View style={styles.containerInput}>
-        <InputComponent />
-        <InputPassword />
+        <InputComponent email={email} setEmail={setEmail} />
+        <InputPassword pass={pass} setPass={setPass} />
       </View>
       <View style={styles.containerInput}>
-        <ButtomLogin title={'Login'} />
+        <ButtomLogin title={'Login'} handleLogin={handleLogin} />
       </View>
       <View style={styles.containerTextOr}>
         <Text style={{fontSize: 16, color: '#aba9a9'}}>or continue with</Text>

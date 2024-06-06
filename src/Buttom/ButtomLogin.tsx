@@ -1,12 +1,16 @@
 import React from 'react';
 import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
-import { useNavigation } from "@react-navigation/native";
 
-export const ButtomLogin = ({title}: {title: any}) => {
-  const navigation = useNavigation();
+export const ButtomLogin = ({
+  title,
+  handleLogin,
+}: {
+  title: string;
+  handleLogin: any;
+}) => {
   return (
     <View>
-      <TouchableOpacity style={styles.containerBtn} onPress={() => navigation.navigate('Main')}>
+      <TouchableOpacity style={styles.containerBtn} onPress={handleLogin}>
         <Text style={styles.textBtn}>{title}</Text>
       </TouchableOpacity>
     </View>

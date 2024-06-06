@@ -8,9 +8,14 @@ import {
 import {PassIcon} from '../assets/icons/PassIcon.tsx';
 import {SeePass} from '../assets/icons/SeePass.tsx';
 
-export const InputPassword = () => {
-  const [pass, setPass] = useState('');
-  const [passSee, setPassSee] = useState(false);
+export const InputPassword = ({
+  pass,
+  setPass,
+}: {
+  pass: string;
+  setPass: any;
+}) => {
+  const [passSee, setPassSee] = useState(true);
 
   const oChangeInputPas = (password: string) => {
     setPass(password);

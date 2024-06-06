@@ -3,9 +3,13 @@ import {StyleSheet, TextInput, TouchableOpacity, View} from 'react-native';
 import {EmaiIcon} from '../assets/icons/EmaiIcon.tsx';
 import {DeleteText} from '../assets/icons/DeleteText.tsx';
 
-export const InputComponent = () => {
-  const [email, setEmail] = useState('');
-
+export const InputComponent = ({
+  email,
+  setEmail,
+}: {
+  email: string;
+  setEmail: any;
+}) => {
   const deleteEmailAll = () => {
     setEmail('');
   };
