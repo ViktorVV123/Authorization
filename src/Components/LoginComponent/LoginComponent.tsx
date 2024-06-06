@@ -6,9 +6,12 @@ import {GoogleBtn} from '../../Buttom/GoogleBtn.tsx';
 import {BackBottom} from '../../Buttom/BackBottom.tsx';
 import {InputPassword} from '../../Input/InputPassword.tsx';
 import {useNavigation} from '@react-navigation/native';
+import {StackNavigationProp} from '@react-navigation/stack';
+import {NavigateType} from '../../../App.tsx';
 
+type NavigationProp = StackNavigationProp<NavigateType, 'Reg'>;
 export const LoginComponent = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation<NavigationProp>();
   return (
     <View style={styles.container}>
       <View>

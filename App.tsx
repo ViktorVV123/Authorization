@@ -8,6 +8,10 @@ import {RegisterComponent} from './src/Components/RegisterComponent/RegisterComp
 import {MainNavigate} from './src/Navigate/MainNavigate.tsx';
 
 const Stack = createNativeStackNavigator();
+export type NavigateType = {
+  Reg: undefined;
+  Log: undefined;
+};
 function App(): React.JSX.Element {
   return (
     <NavigationContainer>

@@ -6,9 +6,13 @@ import {InputPassword} from '../../Input/InputPassword.tsx';
 import {ButtomLogin} from '../../Buttom/ButtomLogin.tsx';
 import {GoogleBtn} from '../../Buttom/GoogleBtn.tsx';
 import {useNavigation} from '@react-navigation/native';
+import {NavigateType} from '../../../App.tsx';
+import {StackNavigationProp} from '@react-navigation/stack';
 
+type NavigationProp = StackNavigationProp<NavigateType, 'Log'>;
 export const RegisterComponent = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation<NavigationProp>();
+
   return (
     <View style={styles.container}>
       <View>

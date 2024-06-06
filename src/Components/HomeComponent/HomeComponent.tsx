@@ -3,9 +3,12 @@ import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
 import {StartIconMan} from '../../assets/icons/StartIconMan.tsx';
 import {HomeIcon} from '../../assets/icons/HomeIcon.tsx';
 import {useNavigation} from '@react-navigation/native';
+import {StackNavigationProp} from '@react-navigation/stack';
+import {NavigateType} from '../../../App.tsx';
 
+type NavigationProp = StackNavigationProp<NavigateType, 'Log', 'Reg'>;
 export const HomeComponent = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation<NavigationProp>();
   return (
     <View style={styles.container}>
       <View style={styles.containerLogo}>
