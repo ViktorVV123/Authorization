@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
+import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
 import {InputComponent} from '../../Input/InputComponent.tsx';
 import {ButtomLogin} from '../../Buttom/ButtomLogin.tsx';
 import {GoogleBtn} from '../../Buttom/GoogleBtn.tsx';
