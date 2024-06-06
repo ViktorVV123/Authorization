@@ -5,6 +5,7 @@ import {SafeAreaView} from 'react-native';
 import {LoginComponent} from './src/Components/LoginComponent/LoginComponent.tsx';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {RegisterComponent} from './src/Components/RegisterComponent/RegisterComponent.tsx';
+import {MainNavigate} from './src/Navigate/MainNavigate.tsx';
 
 const Stack = createNativeStackNavigator();
 function App(): React.JSX.Element {
@@ -25,6 +26,11 @@ function App(): React.JSX.Element {
           <Stack.Screen
             name="Reg"
             component={RegisterComponent}
+            options={{headerShown: false}}
+          />
+          <Stack.Screen
+            name="Main"
+            component={MainNavigate}
             options={{headerShown: false}}
           />
         </Stack.Navigator>
