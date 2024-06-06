@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
 import {BackBottom} from '../../Buttom/BackBottom.tsx';
 import {InputComponent} from '../../Input/InputComponent.tsx';
@@ -12,7 +12,8 @@ import {StackNavigationProp} from '@react-navigation/stack';
 type NavigationProp = StackNavigationProp<NavigateType, 'Log'>;
 export const RegisterComponent = () => {
   const navigation = useNavigation<NavigationProp>();
-
+  const [pass, setPass] = useState('');
+  const [email, setEmail] = useState('');
   return (
     <View style={styles.container}>
       <View>
@@ -23,9 +24,9 @@ export const RegisterComponent = () => {
         <Text style={styles.textTop}>started</Text>
       </View>
       <View style={{marginTop: 100}}>
-        <InputComponent />
-        <InputPassword />
-        <InputPassword />
+        <InputComponent setEmail={setEmail} email={email} />
+        <InputPassword setPass={setPass} pass={pass} />
+        <InputPassword setPass={setPass} pass={pass} />
       </View>
       <View style={{alignItems: 'center', marginTop: 40}}>
         <ButtomLogin title={'Sing up'} />

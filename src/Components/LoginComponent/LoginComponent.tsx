@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import { Text, View, StyleSheet, TouchableOpacity, Alert } from "react-native";
+import React, {useEffect, useState} from 'react';
+import {Text, View, StyleSheet, TouchableOpacity, Alert} from 'react-native';
 import {InputComponent} from '../../Input/InputComponent.tsx';
 import {ButtomLogin} from '../../Buttom/ButtomLogin.tsx';
 import {GoogleBtn} from '../../Buttom/GoogleBtn.tsx';
@@ -8,10 +8,11 @@ import {InputPassword} from '../../Input/InputPassword.tsx';
 import {useNavigation} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
 import {NavigateType} from '../../../App.tsx';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 type NavigationProp = StackNavigationProp<NavigateType, 'Reg', 'Main'>;
 
-const validCredentials = [
+const AllPassword = [
   {username: 'admin', password: 'admin'},
   {username: 'user', password: 'user'},
 ];
@@ -19,17 +20,49 @@ export const LoginComponent = () => {
   const navigation = useNavigation<NavigationProp>();
   const [pass, setPass] = useState('');
   const [email, setEmail] = useState('');
-
-  const handleLogin = () => {
-    const isValid = validCredentials.some(
-      cred => cred.username === email && cred.password === pass,
+  /*const handleLogin = () => {
+    const test = AllPassword.some(
+      el => el.password === pass && el.username === email,
     );
-    if (isValid) {
+    if (test) {
       navigation.navigate('Main');
     } else {
-      {
-        Alert.alert('Login Failed', 'Invalid username or password');
+      Alert.alert('Login Failed', 'Invalid username or password');
+    }
+  };*/
+  useEffect(() => {
+ /* Вариант для сохранения пароля.*/
+    const loadCredentials = async () => {
+      try {
+        const savedUsername = await AsyncStorage.getItem('username');
+        const savedPassword = await AsyncStorage.getItem('password');
+        if (savedUsername && savedPassword) {
+          setEmail(savedUsername);
+          setPass(savedPassword);
+        }
+      } catch (error) {
+        console.error('Failed to load credentials', error);
       }
+    };
+
+    loadCredentials();
+  }, []);
+
+  const handleLogin = async () => {
+    const isValid = AllPassword.some(
+      cred => cred.username === email && cred.password === pass,
+    );
+
+    if (isValid) {
+      try {
+        await AsyncStorage.setItem('username', email);
+        await AsyncStorage.setItem('password', pass);
+        navigation.navigate('Main');
+      } catch (error) {
+        console.error('Failed to save credentials', error);
+      }
+    } else {
+      Alert.alert('Login Failed', 'Invalid username or password');
     }
   };
   return (
