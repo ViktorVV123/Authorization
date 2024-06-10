@@ -1,11 +1,12 @@
 import React from 'react';
-import {Image, StyleSheet, View} from 'react-native';
+import { Image, ScrollView, StyleSheet, View } from "react-native";
 import {SearchProduct} from './SearchProduct.tsx';
 import {AnimatedCard} from './AnimatedCard.tsx';
+import {FlatListComponent} from './FlatListComponent.tsx';
 
 export const MainComponent = () => {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <View>
         <Image
           source={require('../../assets/fon/fon.jpg')}
@@ -22,10 +23,10 @@ export const MainComponent = () => {
         }}>
         <AnimatedCard />
       </View>
-      <View>
-
+      <View style={{marginTop: 10}}>
+        <FlatListComponent />
       </View>
-    </View>
+    </ScrollView>
   );
 };
 const styles = StyleSheet.create({
