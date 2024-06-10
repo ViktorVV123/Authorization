@@ -16,7 +16,7 @@ export type NavigateType = {
 function App(): React.JSX.Element {
   return (
     <NavigationContainer>
-      <SafeAreaView style={{flex: 1, padding: 20, backgroundColor: '#E5EFF8'}}>
+      <SafeAreaView style={{flex: 1, backgroundColor: '#E5EFF8'}}>
         <Stack.Navigator>
           <Stack.Screen
             name="Home"

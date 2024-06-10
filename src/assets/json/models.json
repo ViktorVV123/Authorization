@@ -1,0 +1,266 @@
+{
+  "smartphones": [
+    {
+      "brand": "Apple",
+      "models": [
+        {
+          "id": "1",
+          "name": "iPhone 14",
+          "description": "The latest iPhone with A15 Bionic chip and advanced dual-camera system.",
+          "image": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iPhone13Pro_iPhone13ProMax_SierraBlue_09142021_big.jpg.large.jpg"
+        },
+        {
+          "id": "2",
+          "name": "iPhone 13",
+          "description": "iPhone with A14 Bionic chip and improved battery life.",
+          "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-max-family-hero-all?wid=940&hei=1112&fmt=png-alpha&.v=1631652955000"
+        },
+        {
+          "id": "3",
+          "name": "iPhone 12",
+          "description": "iPhone with A14 Bionic chip and dual-camera system.",
+          "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-select-2020?wid=940&hei=1112&fmt=png-alpha&.v=1604343707000"
+        },
+        {
+          "id": "4",
+          "name": "iPhone 11",
+          "description": "iPhone with A13 Bionic chip and dual-camera system.",
+          "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-11-select-2019?wid=940&hei=1112&fmt=png-alpha&.v=1567021766966"
+        },
+        {
+          "id": "5",
+          "name": "iPhone SE",
+          "description": "Affordable iPhone with A13 Bionic chip.",
+          "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-se-black-select-2020?wid=940&hei=1112&fmt=png-alpha&.v=1586574260319"
+        },
+        {
+          "id": "6",
+          "name": "iPhone XS",
+          "description": "iPhone with A12 Bionic chip and dual-camera system.",
+          "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-xs-select-2018?wid=940&hei=1112&fmt=png-alpha&.v=1550795406610"
+        },
+        {
+          "id": "7",
+          "name": "iPhone XR",
+          "description": "iPhone with A12 Bionic chip and Liquid Retina display.",
+          "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-xr-select-2018?wid=940&hei=1112&fmt=png-alpha&.v=1550795418445"
+        },
+        {
+          "id": "8",
+          "name": "iPhone 8",
+          "description": "iPhone with A11 Bionic chip and single-camera system.",
+          "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-8-select-2017?wid=940&hei=1112&fmt=png-alpha&.v=1550795412209"
+        },
+        {
+          "id": "9",
+          "name": "iPhone 7",
+          "description": "iPhone with A10 Fusion chip and single-camera system.",
+          "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone7-select-2016?wid=940&hei=1112&fmt=png-alpha&.v=1472430086346"
+        },
+        {
+          "id": "10",
+          "name": "iPhone 6",
+          "description": "iPhone with A8 chip and single-camera system.",
+          "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone6-select-2014?wid=940&hei=1112&fmt=png-alpha&.v=1435529904238"
+        }
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "models": [
+        {
+          "id": "11",
+          "name": "Galaxy S21",
+          "description": "Samsung's flagship smartphone with Exynos 2100 and triple-camera setup.",
+          "image": "https://images.samsung.com/is/image/samsung/p6pim/levant/sm-g991bzadegy/gallery/levant-galaxy-s21-5g-g991-371839-sm-g991bzadegy-368035597?$1300_1038_PNG$"
+        },
+        {
+          "id": "12",
+          "name": "Galaxy S20",
+          "description": "Previous flagship with Exynos 990 and triple-camera setup.",
+          "image": "https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-s20/gallery/in-galaxy-s20-g980-sm-g980fzbgins-thumb-229515570?$PD_GALLERY_L_JPG$"
+        },
+        {
+          "id": "13",
+          "name": "Galaxy Note 20",
+          "description": "High-end smartphone with S-Pen and Exynos 990.",
+          "image": "https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-note20/gallery/in-galaxy-note20-5g-n981-360264-sm-n981bznainu-thumb-243801875?$PD_GALLERY_L_JPG$"
+        },
+        {
+          "id": "14",
+          "name": "Galaxy Z Fold 3",
+          "description": "Foldable smartphone with Snapdragon 888 and multiple screens.",
+          "image": "https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-z-fold3/gallery/in-galaxy-z-fold3-f926-394919-sm-f926bzkgins-481232343?$PD_GALLERY_L_JPG$"
+        },
+        {
+          "id": "15",
+          "name": "Galaxy A52",
+          "description": "Mid-range smartphone with Snapdragon 720G and quad-camera setup.",
+          "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-a525fzbfins/gallery/in-galaxy-a52-5g-a526-381837-sm-a525fzbfins-432391853?$PD_GALLERY_L_JPG$"
+        },
+        {
+          "id": "16",
+          "name": "Galaxy A32",
+          "description": "Affordable smartphone with MediaTek Helio G80 and quad-camera setup.",
+          "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-a325fzbpins/gallery/in-galaxy-a32-a325-373697-sm-a325fzbpins-384942254?$PD_GALLERY_L_JPG$"
+        },
+        {
+          "id": "17",
+          "name": "Galaxy M31",
+          "description": "Mid-range smartphone with Exynos 9611 and quad-camera setup.",
+          "image": "https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-m31/gallery/in-galaxy-m31-m315-350119-sm-m315fzbgins-thumb-311839315?$PD_GALLERY_L_JPG$"
+        },
+        {
+          "id": "18",
+          "name": "Galaxy M21",
+          "description": "Affordable smartphone with Exynos 9611 and triple-camera setup.",
+          "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-m215fzbgins/gallery/in-galaxy-m21-m215-328171-sm-m215fzbgins-359194618?$PD_GALLERY_L_JPG$"
+        },
+        {
+          "id": "19",
+          "name": "Galaxy F62",
+          "description": "Mid-range smartphone with Exynos 9825 and quad-camera setup.",
+          "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-e625fzggins/gallery/in-galaxy-f62-e625-372155-sm-e625fzggins-385346401?$PD_GALLERY_L_JPG$"
+        },
+        {
+          "id": "20",
+          "name": "Galaxy A12",
+          "description": "Affordable smartphone with MediaTek Helio P35 and quad-camera setup.",
+          "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-a125fzbgins/gallery/in-galaxy-a12-a125-363274-sm-a125fzbgins-357453164?$PD_GALLERY_L_JPG$"
+        }
+      ]
+    },
+    {
+      "brand": "Google",
+      "models": [
+        {
+          "id": "21",
+          "name": "Pixel 6",
+          "description": "Google's latest smartphone with Tensor chip and advanced camera features.",
+          "image": "https://store.google.com/regionpicker/images/pixel_6_homepage_hero_card_8.webp"
+        },
+        {
+          "id": "22",
+          "name": "Pixel 5",
+          "description": "Google smartphone with Snapdragon 765G and dual-camera setup.",
+          "image": "https://store.google.com/regionpicker/images/pixel_5_homepage_hero_card_8.webp"
+        },
+        {
+          "id": "23",
+          "name": "Pixel 4a",
+          "description": "Affordable Google smartphone with Snapdragon 730G and single-camera setup.",
+          "image": "https://store.google.com/regionpicker/images/pixel_4a_homepage_hero_card_8.webp"
+        }
+      ]
+    },
+    {
+      "brand": "OnePlus",
+      "models": [
+        {
+          "id": "24",
+          "name": "OnePlus 9",
+          "description": "Flagship smartphone with Snapdragon 888 and Hasselblad camera system.",
+          "image": "https://image01.oneplus.net/ebp/202103/26/1-m00-0c-15-rb8bwl-bvgaakjxaacaf6qacpry7xk4840.webp"
+        },
+        {
+          "id": "25",
+          "name": "OnePlus 8T",
+          "description": "High-performance smartphone with Snapdragon 865 and 120Hz display.",
+          "image": "https://image01.oneplus.net/ebp/202010/14/1-m00-05-3d-rb8bwl-_ddg2mkl2aac4iaaad9um9nrsa4858_840_840.png"
+        },
+        {
+          "id": "26",
+          "name": "OnePlus Nord",
+          "description": "Mid-range smartphone with Snapdragon 765G and 90Hz display.",
+          "image": "https://image01.oneplus.net/ebp/202007/22/1-m00-0c-49-rb8bwl-bh-sad3myaaefdoaa1yzl6494.webp"
+        }
+      ]
+    },
+    {
+      "brand": "Sony",
+      "models": [
+        {
+          "id": "27",
+          "name": "Xperia 1 III",
+          "description": "Sony's flagship with Snapdragon 888 and 4K OLED display.",
+          "image": "https://www.sony.com/image/e5171625e0b351bd7b2baf70eea60dce?fmt=jpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF"
+        },
+        {
+          "id": "28",
+          "name": "Xperia 5 II",
+          "description": "Compact smartphone with Snapdragon 865 and 120Hz display.",
+          "image": "https://www.sony.com/image/6e6d7ad306b9d5faac56a5d9e5f53d90?fmt=jpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF"
+        }
+      ]
+    },
+    {
+      "brand": "LG",
+      "models": [
+        {
+          "id": "29",
+          "name": "LG Velvet",
+          "description": "Stylish smartphone with Snapdragon 765G and dual-screen accessory.",
+          "image": "https://www.lg.com/us/images/cell-phones/md07508698/gallery/desktop-01.jpg"
+        },
+        {
+          "id": "30",
+          "name": "LG Wing",
+          "description": "Unique smartphone with swiveling screen and Snapdragon 765G.",
+          "image": "https://www.lg.com/us/images/cell-phones/md08000898/gallery/desktop-01.jpg"
+        }
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "models": [
+        {
+          "id": "31",
+          "name": "Mi 11",
+          "description": "Flagship smartphone with Snapdragon 888 and AMOLED display.",
+          "image": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-11/specs01.png"
+        },
+        {
+          "id": "32",
+          "name": "Redmi Note 10",
+          "description": "Affordable smartphone with Snapdragon 678 and quad-camera setup.",
+          "image": "https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-10/specs02.png"
+        }
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "models": [
+        {
+          "id": "33",
+          "name": "Find X3 Pro",
+          "description": "Flagship smartphone with Snapdragon 888 and advanced camera features.",
+          "image": "https://image.oppo.com/content/dam/oppo/common/mkt/v2-2/find-x3-pro/navigation/v2/navigation-black-v2.png"
+        },
+        {
+          "id": "34",
+          "name": "Reno5",
+          "description": "Mid-range smartphone with Snapdragon 765G and quad-camera setup.",
+          "image": "https://image.oppo.com/content/dam/oppo/common/mkt/v2-2/reno5/navigation/v1/navigation-black-v1.png"
+        }
+      ]
+    },
+    {
+      "brand": "Motorola",
+      "models": [
+        {
+          "id": "35",
+          "name": "Moto G Power",
+          "description": "Smartphone with Snapdragon 662 and 5000mAh battery.",
+          "image": "https://motorola-global-portal.custhelp.com/euf/assets/images/moto_g_power_pdp_01.png"
+        },
+        {
+          "id": "36",
+          "name": "Moto G Stylus",
+          "description": "Smartphone with built-in stylus and Snapdragon 665.",
+          "image": "https://motorola-global-portal.custhelp.com/euf/assets/images/moto_g_stylus_pdp_01.png"
+        }
+      ]
+    }
+  ]
+}
+
